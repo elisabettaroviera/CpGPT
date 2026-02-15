@@ -1,3 +1,24 @@
+"""
+Docstring for cpgpt.data.components.cpgpt_datasaver
+
+1. Cosa fa: converte probe Illumina → coordinate genomiche valide per specie, filtra feature 
+non valide, e salva dataset in memmap + DB metriche.
+2. A cosa serve: costruire il corpus nel formato consumabile da CpGPT 
+(positional/genome-aware + efficiente su disco).
+3. Mi serve: probabilmete sì (perchè devo creare il mio dataset “processed” per CpGPT)
+
+Dati di input a questa classe: 
+        id_tissue | cg0001 | cg0002 | ... | cgNNN | label
+        -------------------------------------------------
+        S1        | 0.82   | 0.03   | ... | 0.91  | 0
+        S2        | 0.79   | 0.04   | ... | 0.88  | 1
+
+- label come metadata -> visto che voglio fare classificazione
+- species -> se non data, di default viene assegnata a homo_sapiens
+- valori -> beta value
+
+"""
+
 import gc
 from pathlib import Path
 

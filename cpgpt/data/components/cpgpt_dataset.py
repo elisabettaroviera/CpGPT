@@ -1,3 +1,25 @@
+"""
+Docstring for cpgpt.data.components.cpgpt_dataset
+
+1. Cosa fa: carica i memmap CpGPT, seleziona e ordina CpG, recupera embedding DNA per 
+coordinate, ritorna tensori + collate con padding.
+2. A cosa serve: costruisce l’input del modello per training/fine-tuning, gestendo scalabilità
+e augmentation.
+3. Mi serve: sì per fare fine-tuning.
+
+PRENDI UNA DECISIONE.
+Ordinamento (sorting_strategy). Dopo eventuale sottocampionamento riordina CpG e var secondo:
+- sorted_chromosome: ordina per posizione dentro cromosoma, ma poi randomizza
+l’ordine dei cromosomi.
+- random_chromosome: randomizza dentro cromosoma e randomizza cromosomi.
+- random: randomizza tutto.
+- original: lascia ordine del file (ma nota: se max_length < n_features, prende i primi).
+
+ATTENZIONE.
+Bisogna fare attenzione a come viene gestito il label in obsm.
+
+"""
+
 from pathlib import Path
 
 import numpy as np
