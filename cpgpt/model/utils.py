@@ -1,3 +1,14 @@
+"""
+Docstring for cpgpt.model.utils
+
+1. Cosa fa: utility per diffusion schedule, conversioni β↔M, estrazione attention,
+callback checkpoint e clone “sicuro”.
+2. A cosa serve: supporto tecnico a training/predict (stabilità numerica, interpretabilità,
+riproducibilità, meno overhead).
+3. Mi serve: sì per β↔M e (se voglio interpretare) per attention; diffusion schedule e
+callback sono opzionali.
+"""
+
 import contextlib
 import math
 from typing import TYPE_CHECKING, Any

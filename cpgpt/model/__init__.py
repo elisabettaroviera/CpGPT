@@ -1,3 +1,11 @@
+"""
+Docstring for cpgpt.model
+
+1. Cosa fa: espone tutte le classi e utility del modulo model come API pubblica.
+2. A cosa serve: permette import puliti e strutturati del framework CpGPT.
+3. Mi serve: non da modificare; lo userò solo per importare modello e wrapper di training.
+"""
+
 from .components import (
     AbsolutePositionalEncoding,
     ChromosomePositionalEncoding,

@@ -1,3 +1,12 @@
+"""
+Docstring for cpgpt.train
+
+1. Cosa fa: entry point Hydra che istanzia tutto e lancia fit/test con metriche.
+2. A cosa serve: training riproducibile + logging/callback + HPO da config YAML.
+3. Mi serve: no, salvo voglia usare il framework CLI della repo; utile solo il
+load-checkpoint pattern.
+"""
+
 from typing import TYPE_CHECKING, Any
 
 import hydra

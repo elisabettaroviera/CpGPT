@@ -1,3 +1,13 @@
+"""
+Docstring for cpgpt.trainer.cpgpt_trainer
+
+1. Cosa fa: estende Lightning Trainer per predict() con modalità custom e concatenazione/padding
+degli output.
+2. A cosa serve: semplifica inference/interpretabilità (attention/reconstruct) senza boilerplate.
+3. Mi serve: non per il fine-tuning in sé; sì se voglio estrazione attention o reconstruct
+in modo standardizzato.
+"""
+
 import torch
 from lightning.pytorch import Trainer
 from lightning.pytorch.callbacks import RichProgressBar

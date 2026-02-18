@@ -1,3 +1,11 @@
+"""
+Docstring for cpgpt.model.cpgpt_module_mortality
+
+1. Cosa fa: estende CpGPT per survival/mortality prediction con Cox, c-index e loss survival.
+2. A cosa serve: task di time-to-event e hazard modeling.
+3. Mi serve: no, per Normal vs Adj classification non serve.
+"""
+
 import os
 import sys
 from typing import Any

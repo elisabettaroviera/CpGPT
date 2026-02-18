@@ -1,3 +1,11 @@
+"""
+Docstring for cpgpt.utils.rich_utils
+
+1. Cosa fa: stampa/visualizza config, hparams e preview dataset con Rich (rank-zero).
+2. A cosa serve: debugging, tracciamento e riproducibilità in pipeline Hydra/Lightning.
+3. Mi serve: no, salvo uso del framework Hydra del repo e run comparativi.
+"""
+
 from collections.abc import Sequence
 from pathlib import Path
 from typing import Any

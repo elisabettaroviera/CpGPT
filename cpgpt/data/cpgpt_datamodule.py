@@ -1,3 +1,16 @@
+"""
+Docstring for cpgpt.data.cpgpt_datamodule
+
+1. Cosa fa: costruisce i DataLoader (train/val/test/predict) per CpGPT usando CpGPTDataset,
+inizializza l’DNALLMEmbedder e gestisce batching, padding e compatibilità DDP in PyTorch Lightning.
+2. A cosa serve: integra il data pipeline CpGPT nel framework Lightning, rendendo il fine-tuning
+plug-and-play con gestione corretta di batch size, shuffle, collate e distribuzione multi-device.
+3. Mi serve: sì, se voglio fare fine-tuning usando il framework ufficiale Lightning della repo;
+non strettamente necessario se scrivo manualmente Dataset + DataLoader, ma molto più comodo
+e sicuro usarlo.
+
+"""
+
 from typing import Any
 
 from lightning import LightningDataModule

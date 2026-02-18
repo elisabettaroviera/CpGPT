@@ -1,3 +1,11 @@
+"""
+Docstring for cpgpt.utils.instantiators
+
+1. Cosa fa: istanzia callback e logger Lightning a partire da configurazioni Hydra.
+2. A cosa serve: separare configurazione YAML da codice ed evitare hardcoding.
+3. Mi serve: no, a meno che non uso il pipeline Hydra della repo originale.
+"""
+
 import hydra
 from lightning import Callback
 from lightning.pytorch.loggers import Logger

@@ -1,3 +1,14 @@
+"""
+Docstring for cpgpt.data.components.dna_llm_embedder
+
+1. Cosa fa: gestisce metadati Ensembl, scarica genome, genera e cache-a embedding DNA per
+chr:pos con DNA LLM, salvandoli in memmap indicizzato.
+2. A cosa serve: fornire a CpGPT input “sequence embeddings” precomputati, coerenti con
+specie/assembly, per training/fine-tuning efficiente.
+3. Mi serve: sì, se voglio usare CpGPT come nella repo (dataset richiede gli embedding); 
+no solo se modifico il modello/dataloader per non usare DNA embeddings.
+"""
+
 import gc
 import gzip
 import json

@@ -1,3 +1,12 @@
+"""
+Docstring for cpgpt.loss
+
+1. Cosa fa: rende pubbliche le funzioni loss del progetto.
+2. A cosa serve: API organizzativa per training flessibile.
+3. Mi serve: no per classificazione standard; utile solo per task survival/contrastive
+o se richiamate dal modulo principale.
+"""
+
 from .loss import (
     beta_loss,
     c_index_loss,

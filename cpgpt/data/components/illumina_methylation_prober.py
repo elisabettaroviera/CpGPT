@@ -1,3 +1,14 @@
+"""
+Docstring for cpgpt.data.components.illumina_methylation_prober
+
+1. Cosa fa: scarica/parse manifest Illumina (hg38) e costruisce una mappa cg... ↔ chr:pos 
+per species, salvandola su SQLite.
+2. A cosa serve: convertire le feature dei miei dataset (probe IDs) in coordinate genomiche
+per creare var.mmap e collegare DNA embeddings.
+3. Mi serve: sì, praticamente obbligatorio per fine-tuning CpGPT su dati Illumina reali.
+
+"""
+
 import gc
 import os
 import shutil

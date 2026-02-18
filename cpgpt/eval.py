@@ -1,4 +1,8 @@
-"""Module for evaluating trained models using checkpoints and computing test metrics."""
+"""Module for evaluating trained models using checkpoints and computing test metrics.
+
+1. Cosa fa: script Hydra per valutare un checkpoint CpGPT su validation/test.
+2. A cosa serve: evaluation strutturata via config YAML + Lightning.
+3. Mi serve: no, salvo uso completo del framework CLI della repo."""
 
 from typing import TYPE_CHECKING, Any
 

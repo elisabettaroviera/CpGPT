@@ -1,3 +1,14 @@
+"""
+Docstring for cpgpt.model.components.modules
+
+1. Cosa fa: implementa maschere di attenzione genomiche, positional encodings e blocchi
+(MLP/Transformer/MoE/FFT) usati da CpGPT.
+2. A cosa serve: dare al modello sensibilità a chr/pos e fornire le componenti per costruire
+l’encoder.
+3. Mi serve: sì, perché è l’infrastruttura del backbone; attenzione però a possibili problemi
+di consistenza chr→id e alla maschera Hi-C.
+"""
+
 import math
 from collections.abc import Callable
 

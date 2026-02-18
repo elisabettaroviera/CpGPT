@@ -1,3 +1,11 @@
+"""
+Docstring for cpgpt.utils.utils
+
+1. Cosa fa: gestisce extras, wrapper robusto per task e recupero metriche.
+2. A cosa serve: infrastruttura Hydra/Lightning per run strutturate e HPO.
+3. Mi serve: no, salvo uso completo del framework CLI della repo.
+"""
+
 import warnings
 from collections.abc import Callable
 from importlib.util import find_spec

@@ -1,3 +1,12 @@
+"""
+Docstring for cpgpt.utils.logging_utils
+
+1. Cosa fa: logga hyperparameters e configura logger con output su console + file.
+2. A cosa serve: tracciamento esperimenti e riproducibilità via Hydra/Lightning.
+3. Mi serve: no, a meno che non voglia usare il framework completo di experiment tracking
+della repo.
+"""
+
 import sys
 from pathlib import Path
 from typing import Any

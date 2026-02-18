@@ -1,3 +1,14 @@
+"""
+Docstring for cpgpt.model.cpgpt_module
+
+1. Cosa fa: LightningModule base che gestisce training/val/predict di CpGPT con masking/split
+generativi, ricostruzione, (opz.) diffusion e condition decoder.
+2. A cosa serve: motore generale per pretraining/finetuning generativo della metilazione
++ (opz.) predizione supervisionata di condizioni.
+3. Mi serve: sì come scaffolding/backbone, ma per Normal vs Adj conviene adattarlo o
+farne uno più leggero focalizzato su classification head.
+"""
+
 from pathlib import Path
 from typing import Any
 

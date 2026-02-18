@@ -1,3 +1,13 @@
+"""
+Docstring for cpgpt.extras.brain_dump
+
+1. Cosa fa: demo Lightning di un MLP per survival che predice risk score e ottimizza
+c_index_loss su dati sintetici.
+2. A cosa serve: template/bozza per training survival (fit/val/test + checkpoint/early stopping +
+predict).
+3. Mi serve: no per fine-tuning CpGPT su classificazione.
+"""
+
 import torch
 import torch.nn as nn
 import numpy as np

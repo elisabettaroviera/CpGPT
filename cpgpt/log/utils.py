@@ -1,3 +1,11 @@
+"""
+Docstring for cpgpt.log.utils
+
+1. Cosa fa: gestisce logging e barra di progresso per download.
+2. A cosa serve: monitoraggio e debug dell’infrastruttura.
+3. Mi serve: no per il fine-tuning; solo supporto operativo.
+"""
+
 import sys
 from pathlib import Path
 

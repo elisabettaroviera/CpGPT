@@ -1,3 +1,22 @@
+"""
+Docstring for cpgpt.infer.cpgpt_inferencer
+
+1. Cosa fa: interfaccia S3 + loader Hydra per scaricare modelli/dipendenze/dataset e caricare un
+CpGPT pre-trained (con state_dict fix) su CPU/GPU.
+2. A cosa serve: rendere immediato l’uso dei pre-trained (small/large) e delle loro dipendenze
+senza gestire manualmente AWS e checkpoint.
+3. Mi serve: sì per il tuo fine-tuning da pre-trained; è la strada “standard” e meno fragile.
+
+ATTENZIONE!!
+Per usare il modello pre-trained mi servono:
+- checkpoint: small.ckpt
+- config Hydra/YAML: small.yaml (serve a istanziare l’architettura corretta)
+- (eventuale) vocab: small.json (dipende dal modello; nel codice lo trattano come opzionale,
+ma spesso serve per componenti basate su token/feature encoding)
+Senza small.yaml non posso ricostruire il modello in modo affidabile: il .ckpt non contiene
+“come è fatto” il modello in modo completo/standard.
+"""
+
 from pathlib import Path
 
 import boto3

@@ -1,3 +1,13 @@
+"""
+Docstring for cpgpt.loss.loss
+
+1. Cosa fa: collezione di loss per pretraining (β/prob), embeddings (contrastive) e
+survival (Cox/C-index/Gompertz).
+2. A cosa serve: scegliere l’obiettivo di training in base al task.
+3. Mi serve: per fine-tuning classificazione Normal vs Adjacent di solito no;
+serve solo se la pipeline la richiama esplicitamente.
+"""
+
 import torch
 import torch.nn.functional as F
 

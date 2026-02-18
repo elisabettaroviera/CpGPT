@@ -1,3 +1,12 @@
+"""
+Docstring for cpgpt.model.components.model
+
+1. Cosa fa: costruisce il sample embedding fondendo DNA-embeddings + metilazione + posizione
+e lo processa con Transformer/Mamba.
+2. A cosa serve: base per pretraining (ricostruzione) e per fine-tuning (embedding → testa).
+3. Mi serve: sì, è il pezzo centrale; per classificazione mi basta fino al sample embedding.
+"""
+
 import math
 
 import torch

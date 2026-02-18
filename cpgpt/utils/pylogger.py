@@ -1,3 +1,11 @@
+"""
+Docstring for cpgpt.utils.pylogger
+
+1. Cosa fa: logger compatibile con training multi-GPU che prefixa i messaggi con il rank.
+2. A cosa serve: evitare duplicazione/confusione di log in training distribuito.
+3. Mi serve: no, salvo uso esplicito di multi-GPU distribuito.
+"""
+
 import logging
 from collections.abc import Mapping
 
